@@ -6,7 +6,8 @@ const Preview = (props) => {
     const {text} = props;
 
     return (
-        <div>
+        <div id="preview-container" > 
+            <h1>Preview</h1>
             <div id = "preview" dangerouslySetInnerHTML={{__html:marked(text)}}></div>
         </div>
        
